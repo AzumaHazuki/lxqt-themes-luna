@@ -1,0 +1,8 @@
+/* Configuration Center
+Theming by the base Qt widget style and palette */
+
+QToolTip {
+    border: 1px solid #000000;
+    background: #ffffe2;
+    color: #000000;
+}
