@@ -1,0 +1,177 @@
+/* Dropdown panel */
+#panel {
+    color: #000000;
+    background: #e6e6ed;
+    background-clip: content;
+    border: 3px solid transparent;
+    border-image: url(assets/buttons/button.png);
+}
+
+/* Buttons */
+QToolButton {
+    color: #000000;
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: none;
+}
+
+QToolButton:hover {
+    border-image: url(assets/buttons/button-hover.png);
+}
+
+QToolButton:pressed {
+    border-image: url(assets/buttons/button-active.png);
+}
+
+QToolButton::menu-indicator {
+    image: none;
+}
+
+#closeButton {
+    qproperty-icon: url(assets/icons/close.svg);
+    qproperty-iconSize: 24px;
+}
+
+#actionbutton {
+    qproperty-icon: url(assets/icons/menu.svg);
+    qproperty-iconSize: 24px;
+}
+
+/* Command box */
+#commandEd {
+    color: #000000;
+    background: #ffffff;
+    selection-color: #000000;
+    selection-background-color: #a6a3b4;
+    border: 1px solid #7b9ebd;
+    margin: 2px;
+    padding: 2px;
+    font: normal;
+}
+
+/* Search results */
+#commandList {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #a1a192;
+    border-top: none;
+}
+
+#commandList::item,
+#commandList::item:alternate {
+    color: #000000;
+    background: #ffffff;
+}
+
+#commandList::item:hover,
+#commandList::item:selected,
+#commandList::item:selected:hover {
+    color: #000000;
+    background: #a6a3b4;
+}
+
+/* Menus  - may copy QMenu section from lxqt-panel.qss */
+QMenu {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #a1a192;
+    min-width: 120px;
+}
+
+QMenu::item {
+    color: #000000;
+    background: transparent;
+    border: 0px solid transparent;
+    padding: 0px 5px;
+    min-height: 26px;
+    min-width: 120px;
+}
+
+QMenu::item:selected {
+    color: #ffffff;
+    background: #a6a3b4;
+}
+
+QMenu::item:disabled {
+    color: #a1a192;
+}
+
+QMenu:icon {
+    padding-left: 5px;
+}
+
+/* Scrollbars  - may copy QScrollBar:vertical section from lxqt-panel.qss */
+QScrollBar:vertical {
+    color: #000000;
+    background: transparent;
+    background-image: url(assets/scrollbars/scrollbar-v.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-attachment: fixed;
+    width: 17px;
+    padding: 17px 0px;
+}
+
+QScrollBar::handle:vertical {
+    color: transparent;
+    background: none;
+    background-image: url(assets/scrollbars/grip-v.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border: 3px solid transparent;
+    border-image: url(assets/scrollbars/handle-v.png) 3;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    color: transparent;
+    background: transparent;
+    background-image: url(assets/scrollbars/grip-v-hover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-image: url(assets/scrollbars/handle-v-hover.png) 3;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:pressed {
+    color: transparent;
+    background: transparent;
+    background-image: url(assets/scrollbars/grip-v-pressed.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-image: url(assets/scrollbars/handle-v-pressed.png) 3;
+    min-height: 24px;
+}
+
+QScrollBar::add-line:vertical {
+    color: transparent;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(assets/scrollbars/arrow-down.png);
+}
+
+QScrollBar::add-line:vertical:hover {
+    border-image: url(assets/scrollbars/arrow-down-hover.png);
+}
+
+QScrollBar::add-line:vertical:pressed {
+    border-image: url(assets/scrollbars/arrow-down-pressed.png);
+}
+
+QScrollBar::sub-line:vertical {
+    color: transparent;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: url(assets/scrollbars/arrow-up.png);
+}
+
+QScrollBar::sub-line:vertical:hover {
+    border-image: url(assets/scrollbars/arrow-up-hover.png);
+}
+
+QScrollBar::sub-line:vertical:pressed {
+    border-image: url(assets/scrollbars/arrow-up-pressed.png);
+}
