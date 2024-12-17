@@ -427,7 +427,7 @@ VolumePopup > QPushButton:pressed,
     border-image: url(assets/buttons/button-active.png);
 }
 
-QSlider {
+LXQtPanel QSlider {
     color: #000000;
     background: #e6e6ed;
     min-width: 22px;
@@ -435,8 +435,8 @@ QSlider {
     margin: 4px 0px;
 }
 
-QSlider::groove,
-QSlider::sub-page {
+LXQtPanel QSlider::groove,
+LXQtPanel QSlider::sub-page {
     color: #000000;
     background: transparent;
     border: 0px solid transparent;
@@ -444,7 +444,7 @@ QSlider::sub-page {
     width: 4px;
 }
 
-QSlider::handle {
+LXQtPanel QSlider::handle {
     color: #000000;
     background: transparent;
     border: 0px solid transparent;
@@ -454,11 +454,11 @@ QSlider::handle {
     height: 11px;
 }
 
-QSlider::handle:hover {
+LXQtPanel QSlider::handle:hover {
     border-image: url(assets/scrollbars/slider-v-hover.png);
 }
 
-QSlider::handle:pressed {
+LXQtPanel QSlider::handle:pressed {
     border-image: url(assets/scrollbars/slider-v-active.png);
 }
 
